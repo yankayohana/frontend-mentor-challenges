@@ -1,0 +1,126 @@
+:root {
+    /* primary colors */
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-bright-yellow: hsl(71, 73%, 54%);
+
+    /* neutral colors */
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+/* tags html */
+body {
+    background-color: var(--color-light-gray);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h3, p, button {
+    margin-left: 2.3rem;
+}
+
+
+/* classes */
+.box {
+    width: 50%;
+    margin: 100px auto 100px auto;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 3px var(--color-grayish-blue);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-template-areas: "section-1 section-1" "sign-up-section why-section";                         
+}
+
+
+.section-1 {
+    background-color: whitesmoke;
+    grid-area: section-1;
+    border-radius: 10px 10px 0 0;
+    padding-top: 20px;
+
+}
+
+.section-1 h1 {
+    color: var(--color-cyan);
+}
+
+#texto {
+    color: var(--color-bright-yellow);
+    font-weight: 700;
+}
+
+.section-1 p {
+    color: var(--color-grayish-blue);
+}
+
+.sign-up-section {
+    background-color: var(--color-cyan);
+    grid-area: sign-up-section;
+    border-radius: 0 0  0 10px;
+}
+
+.sign-up-section h3, span {
+    color: whitesmoke;
+}
+
+.sign-up-section h3 {
+    padding-top: 20px;
+}
+
+.sign-up-section p {
+    color: var(--color-light-gray);
+    font-weight: 400;
+    
+}
+
+#full-acess {
+    color: var(--color-light-gray);
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.sign-up-section span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.why-section h3 {
+    color: whitesmoke;
+    padding-top: 20px;
+    
+}
+
+.why-section li {
+    font-weight: 400;
+    color: var(--color-light-gray);
+    padding-bottom: 4px;
+}
+
+
+.why-section {
+    background-color: #4abebd;
+    grid-area: why-section;
+    border-radius: 0 0  10px 0
+}
+
+button {
+    width: 77%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: var(--color-bright-yellow);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0px 3px 15px #219f89, 0px 1px 5px #219f89;;
+
+}
