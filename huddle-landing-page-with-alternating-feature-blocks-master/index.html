@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel='stylesheet' href='./css/style.css' />
+  <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="./css/desktop-style.css" />
+
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
@@ -22,38 +24,40 @@
   <section class="first-section">
 
     <header class="header">
-      <nav class="navegation-bar">
-        <a href="#"><img id="logo-img" src="./images/logo.svg" alt="Logo Huddle"></a>
-        <a href="#" class="first-button">Try It Free</a>
+      <nav class="header-navegation-bar">
+        <a href="#"><img class="header__logo-img" src="./images/logo.svg" alt="Logo Huddle"></a>
+        <a href="#" class="header__button header--white-button">Try It Free</a>
       </nav>
   
-      <div class="grid">
-        <div class="text-box">
-          <h1>
-            <span class="titulos">Build The Community</span>
-            <span class="titulos titulo-2">Your Fans Will Love</span>
+      <div class="header-intro">
+        <div class="header__text-box">
+          <h1 class="header__titles">
+            <span class="header__title header__title--one">Build The Community</span>
+            <span class="header__title header__title--two">Your Fans Will Love</span>
           </h1>
     
           <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
             Create connections with your users as you engage in genuine discussion. </p>
     
-          <a href="#" class="pink-button button">Get Started For Free</a>
+          <a href="#" class="header__second_button button">Get Started For Free</a>
         </div>
     
-        <div class="img-box">
-          <img class="first-img" src="./images/illustration-mockups.svg" alt="illustration mockups">
+        <div class="header__img-box">
+          <img class="header__first-img" src="./images/illustration-mockups.svg" alt="illustration mockups"> 
         </div>
       </div>
     </header>
+    
   </section>
 
   
-
+<!--
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Yanka Yohana</a>.
     </p>
   </footer>
+  -->
 </body>
 </html>
