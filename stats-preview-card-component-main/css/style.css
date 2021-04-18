@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  /* Primary Colors */
+
+  --var-very-dark-blue: hsl(233, 47%, 7%); /** main background **/
+  --var-dark-desaturated-blue: hsl(244, 38%, 16%); /** card background **/
+  --var-soft-violet: hsl(277, 64%, 61%); /** accent **/
+
+  /* Neutral Colors */
+
+  --var-white: hsl(0, 0%, 100%); /** main heading, stats **/
+  --var-slightly-transparent-white: hsla(
+    0,
+    0%,
+    100%,
+    0.75
+  ); /** main paragraph **/
+  --var-slightly-transparent-white: hsla(
+    0,
+    0%,
+    100%,
+    0.6
+  ); /** (stat headings) **/
+
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--var-very-dark-blue);
+  padding: 5rem 0;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+
+  line-height: 1.2;
+}
+
+h3 {
+  padding: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+h1,
+h3 {
+  color: var(--var-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+p,
+.div-span,
+h1 {
+  padding: 0 0 2rem 0;
+}
+
+p,
+.div-span > span {
+  color: var(--var-slightly-transparent-white);
+}
+
+.div-span > span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 > span {
+  color: var(--var-soft-violet);
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  background-color: var(--var-dark-desaturated-blue);
+}
+
+.figure-container img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+  color: var(--var-soft-violet);
+}
+
+.section-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 0 1rem 0;
+}
+
+.attribution {
+  display: none;
+}
+
+@media (min-width: 1281px) {
+  body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .section-text {
+    width: 50%;
+    text-align: left;
+  }
+
+  .container-text {
+    width: 70%;
+    padding: 4rem 0 4rem 8rem;
+  }
+
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    transform: translateY(+50%);
+  }
+
+  .figure-container {
+    width: 50%;
+  }
+
+  .figure-container img {
+    border-radius: 0px 10px 10px 0px;
+    width: 100%;
+  }
+}
